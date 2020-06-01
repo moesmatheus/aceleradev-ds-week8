@@ -150,8 +150,9 @@ def main():
     # df_input.to_csv('st.csv')
     # df_input.to_pickle('st.pkl')
 
+    st.subheader(f'Expected Grade: {prediction:.2f}')
     #Plot data
-    st.subheader('Prediction')
+    #st.subheader('Prediction')
     plt.hist(target, bins = 70, alpha = 0.6)
     plt.axvline(prediction, color='k', linestyle='dashed', linewidth=1, label = 'Prediction', alpha = .5)
     min_ylim, max_ylim = plt.ylim()
