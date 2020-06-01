@@ -61,18 +61,6 @@ def preProcess(path = 'train.csv', df_ = None, train = True, save = False,
     except:    
         raise ValueError('Column missing from data')
         
-     
-    # Columns that have floats but are categorical
-    # cols_cat = [
-    #     'TP_COR_RACA', 'TP_NACIONALIDADE', 'TP_ST_CONCLUSAO', 'TP_ENSINO', 'TP_DEPENDENCIA_ADM_ESC',
-    #     'CO_PROVA_CH', 'CO_PROVA_MT',#'CO_PROVA_LC',
-    #      'TP_STATUS_REDACAO'
-    #            ]
-    
-    # Convert columns
-    
-    
-        
     float_cols = [
         'NU_NOTA_CN', 'NU_NOTA_CH', 'NU_NOTA_LC', 'NU_NOTA_COMP1','NU_NOTA_COMP2',
         'NU_NOTA_COMP3', 'NU_NOTA_COMP4', 'NU_NOTA_COMP5','NU_NOTA_REDACAO',
@@ -114,8 +102,7 @@ def preProcess(path = 'train.csv', df_ = None, train = True, save = False,
     pipe_target = Pipeline(
         [('scaler', StandardScaler())]
     )
-    
-    # print(df.head())
+
     
     # Fit pipelines
     if train:

@@ -49,7 +49,7 @@ def load_data():
 
 def main():
 
-    st.title('ENEM Prediction Model')
+    st.title('ENEM Predictive Model')
 
     data = load_data()
 
