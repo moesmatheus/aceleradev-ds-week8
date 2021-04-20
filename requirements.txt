@@ -67,7 +67,7 @@ ppscore==0.0.2
 prompt-toolkit==1.0.15
 protobuf==3.12.2
 ptyprocess==0.6.0
-py==1.5.3
+py==1.10.0
 pydeck==0.3.1
 Pygments==2.2.0
 pyparsing==2.4.7
